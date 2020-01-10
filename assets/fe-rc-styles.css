@@ -1,0 +1,16 @@
+.fe-infobox {
+    background-color: #ECEEEF;
+}
+
+.fe-table-of-content {
+    font-size: 1.25em;
+}
+
+.fe-table-of-content a{
+    text-decoration: underline;
+}
+
+.fe-back-to-top {
+    font-size: 1.2em;
+}
+

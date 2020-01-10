@@ -1,0 +1,54 @@
+/* Print Style Sheet */
+@media print {
+
+    @page {
+        size: A4 !important;
+        margin-left: 50px;
+        margin-right:  50px;
+        margin-top:  50px;
+        margin-bottom:  50px
+        
+      }
+
+      .h1 { 
+          page-break-after: always; 
+          break-after: all;
+        
+        } /* page-break-after works, as well */
+
+      print-button
+  
+    
+    h2, h3, h4, h5 {
+        page-break-after: avoid-page !important;
+    }
+
+    
+table, figure {
+    page-break-inside: avoid;
+  }
+
+    body { background:white !important; color:black; margin:0; font-size: 12pt !important; }
+    #header { display: none; }
+    /*#content { } */
+    #comments {display: none; }
+    #sidebar { display: none;}
+    .site-footer { display: none !important; }
+    .fe-back-to-top { display: none !important; }
+    .print-button { display: none !important; }
+    .fe-table-of-content {    font-size: inherit !important; page-break-after: always !important; }
+
+  .fe-ol{ page-break-before: always !important;}
+/*
+    .site-content::after {
+        content: "Copyright site.com";
+        display: block;
+        text-align: center;
+      }
+
+
+*/
+
+
+
+    }
